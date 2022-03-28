@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "trimbox"
+version = "0.1.0"
+description = ""
+authors = ["Jóhann Friðriksson <johann.fridriksson@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^8.0.4"
+rich = "^12.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+trimbox = "trimbox.main:main"
